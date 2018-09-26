@@ -6,7 +6,7 @@ target 'CHProgressSuit' do
   use_frameworks!
 
   # Pods for CHProgressSuit
-  pod 'CHCubicBezier', '~> 2.0.0'
+  pod 'CHCubicBezier',  :git => 'https://github.com/JackySONE/CHCubicBezier'
 
   target 'CHProgressSuitTests' do
     inherit! :search_paths

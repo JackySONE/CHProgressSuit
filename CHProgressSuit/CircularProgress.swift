@@ -10,7 +10,7 @@ import UIKit
 import CHCubicBezier
 
 @IBDesignable
-open class CircularProgress: UIView {
+@objcMembers open class CircularProgress: UIView {
     @IBInspectable open var progressBarColor: UIColor! {
         didSet {
             progressBar.strokeColor = progressBarColor.cgColor
@@ -53,7 +53,7 @@ open class CircularProgress: UIView {
             
             if displayLink == nil {
                 displayLink = CADisplayLink(target: self, selector: #selector(updateProgress))
-                displayLink?.add(to: RunLoop.main, forMode: RunLoopMode.defaultRunLoopMode)
+                displayLink?.add(to: RunLoop.main, forMode: RunLoop.Mode.default)
             }
         }
     }
@@ -144,7 +144,7 @@ open class CircularProgress: UIView {
         // However, our company project supports iOS 8, I need to use APIs availble in iOS 8
         // let font = UIFont.systemFontOfSize(fontSize, weight: UIFontWeightMedium)
         let font = UIFont(name: "HelveticaNeue-Medium", size: fontSize)!
-        let textSize = progressString.size(attributes: [NSFontAttributeName: font])
+        let textSize = progressString.size(withAttributes: [NSAttributedString.Key.font: font])
         
         progressText.font = font
         progressText.fontSize = fontSize
@@ -200,7 +200,7 @@ open class CircularProgress: UIView {
         progressText.actions = ["contents": NSNull()]
         
         progressText.contentsScale = UIScreen.main.scale
-        progressText.alignmentMode = kCAAlignmentCenter
+        progressText.alignmentMode = CATextLayerAlignmentMode.center
         progressText.string = "\((Int)(progress))"
         
         self.layer.addSublayer(fillBackground)
@@ -212,6 +212,6 @@ open class CircularProgress: UIView {
     fileprivate func configure() {
         progressAnimation.timingFunction = CAMediaTimingFunction(controlPoints: 0.42, 0, 0.58, 1)
         progressAnimation.isRemovedOnCompletion = false
-        progressAnimation.fillMode = kCAFillModeForwards
+        progressAnimation.fillMode = CAMediaTimingFillMode.forwards
     }
 }

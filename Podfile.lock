@@ -2,11 +2,20 @@ PODS:
   - CHCubicBezier (2.0.0)
 
 DEPENDENCIES:
-  - CHCubicBezier (~> 2.0.0)
+  - CHCubicBezier (from `https://github.com/JackySONE/CHCubicBezier`)
+
+EXTERNAL SOURCES:
+  CHCubicBezier:
+    :git: https://github.com/JackySONE/CHCubicBezier
+
+CHECKOUT OPTIONS:
+  CHCubicBezier:
+    :commit: c7eaf28657549254aaaf57fe7873dda49589742e
+    :git: https://github.com/JackySONE/CHCubicBezier
 
 SPEC CHECKSUMS:
   CHCubicBezier: 19e7c7f67f86f525f523b4ff9e483ed404058412
 
-PODFILE CHECKSUM: 028029d95e573e3dea6349dbcaa10fb1dd30157c
+PODFILE CHECKSUM: b0e98760cd9a3c7cd24e7a925e84ba5fec1ac2bd
 
-COCOAPODS: 1.1.1
+COCOAPODS: 1.3.1
