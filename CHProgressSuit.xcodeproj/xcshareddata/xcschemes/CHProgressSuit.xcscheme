@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0A5281269FDA7DB3394D26C31188AC94"
+               BlueprintIdentifier = "69B0FBE706DD5A000097162A665A9228"
                BuildableName = "CHCubicBezier.framework"
                BlueprintName = "CHCubicBezier"
                ReferencedContainer = "container:Pods/Pods.xcodeproj">
@@ -28,7 +28,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "436B94A3150BC898AC1DF50E824910D6"
+               BlueprintIdentifier = "4B1C53F8EBE7C35FB25CAA3E504ABA12"
                BuildableName = "Pods_CHProgressSuit.framework"
                BlueprintName = "Pods-CHProgressSuit"
                ReferencedContainer = "container:Pods/Pods.xcodeproj">
@@ -42,7 +42,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5FB5BAA3E525D56981D846F421A408F3"
+               BlueprintIdentifier = "C7CE3B4A94B6AA78720153A04FB8F54E"
                BuildableName = "Pods_CHProgressSuitTests.framework"
                BlueprintName = "Pods-CHProgressSuitTests"
                ReferencedContainer = "container:Pods/Pods.xcodeproj">
@@ -56,7 +56,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7FFCAD8682AF23F82A540FE87BAD895C"
+               BlueprintIdentifier = "449FED122A942E3FCA124E631156C0A7"
                BuildableName = "Pods_CHProgressSuitUITests.framework"
                BlueprintName = "Pods-CHProgressSuitUITests"
                ReferencedContainer = "container:Pods/Pods.xcodeproj">
